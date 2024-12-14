@@ -1,10 +1,12 @@
 [build]
   # The directory containing the built/generated files that will be deployed to Netlify
   publish = "docs/dist"
-  command = "go install github.com/JackalLabs/docute@latest && cd docs && $HOME/go/bin/docute generate"
+  command = "mkdir -p $HOME/go/bin && export PATH=$PATH:$HOME/go/bin && go install github.com/JackalLabs/docute@latest && cd docs && docute generate"
 
 [build.environment]
   GO_VERSION = "1.22.1"
+  GOPATH = "/opt/buildhome/go"
+  GOBIN = "/opt/buildhome/go/bin"
 
 [[redirects]]
   from = "/*"
