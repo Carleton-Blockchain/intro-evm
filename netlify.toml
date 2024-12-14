@@ -17,5 +17,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/README.md"
   status = 200
