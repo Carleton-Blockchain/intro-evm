@@ -8,7 +8,6 @@
     go install github.com/JackalLabs/docute@latest && \
     cd docs && \
     docute generate
-    docute watch
   """
 
 [build.environment]
