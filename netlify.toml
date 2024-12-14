@@ -1,6 +1,6 @@
 [build]
   # The directory containing the built/generated files that will be deployed to Netlify
-  publish = "docs/dist"
+  publish = "docs"
   command = """
     mkdir -p $HOME/go/bin && \
     export PATH=$PATH:$HOME/go/bin && \
