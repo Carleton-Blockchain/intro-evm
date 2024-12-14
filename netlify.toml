@@ -5,19 +5,17 @@
     export GOPATH=/opt/buildhome/go && \
     export GOBIN=/opt/buildhome/go/bin && \
     export PATH=$PATH:$GOBIN && \
-    echo "Go environment:" && \
-    echo "GOPATH=$GOPATH" && \
-    echo "GOBIN=$GOBIN" && \
-    echo "PATH=$PATH" && \
     echo "Installing docute..." && \
     go install github.com/JackalLabs/docute@latest && \
-    echo "Docute path:" && \
-    which docute && \
     echo "Creating directories..." && \
     mkdir -p docs/dist && \
     cd docs && \
+    echo "Initializing docute..." && \
+    docute init && \
     echo "Running docute generate..." && \
-    docute generate
+    docute generate && \
+    echo "Generated files:" && \
+    ls -la
   """
 
 [build.environment]
