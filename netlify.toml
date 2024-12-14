@@ -7,6 +7,8 @@
     mkdir -p docs/dist && \
     go install github.com/JackalLabs/docute@latest && \
     cd docs && \
+    docute --version
+    \
     docute generate
   """
 
