@@ -1,10 +1,7 @@
 [build]
+  # The directory containing the built/generated files that will be deployed to Netlify
   publish = "docs/dist"
-  command = """
-    go install github.com/JackalLabs/docute@latest && \
-    cd docs && \
-    docute generate
-  """
+  command = "go install github.com/JackalLabs/docute@latest && cd docs && docute generate"
 
 [build.environment]
   GO_VERSION = "go 1.22.1"
