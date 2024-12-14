@@ -4,7 +4,7 @@
   command = "go install github.com/JackalLabs/docute@latest && cd docs && docute generate"
 
 [build.environment]
-  GO_VERSION = "go 1.22.1"
+  GO_VERSION = "1.22.1"
 
 [[redirects]]
   from = "/*"
