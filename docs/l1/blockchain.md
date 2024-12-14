@@ -1,12 +1,22 @@
 # What is a Blockchain?
 
 
-https://andersbrownworth.com/blockchain/hash
---
-https://btcscan.org/
 
-Imagine a blockchain is like an append only, singly linked-list that anyone in the world can see.
+Resources Used: 
 
+
+<a href="https://btcscan.org/" target="_blank">Bitscan</a> 
+
+<a href="https://andersbrownworth.com/blockchain/hash" target="_blank">POW Blockchain Visualization</a> 
+
+`
+TLDR : Imagine a blockchain is like an append only, singly linked-list that anyone in the world can see.
+`
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+<!-- Add KaTeX JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 ## Key Concepts
 
 ## Hash 
@@ -16,9 +26,9 @@ A hash is a fingerprint of some digital data.
 Regardless if the input data is 1 char or an entire library, a unique has will be generated
 SHA-256(Secure Hash Algorithm 256-bit) produces a fixed-size 256-bit hash value. Since a bit has two possible states (0/1) the total number of possible hash values is:
 
-```
-2^256 possibilities
-```
+
+$2^{256}$ possibilities
+
 
 This property ensures that data within the blockchain cannot be tampered with undetected. You modify 1 character the and the digital fingerprint changes. 
 

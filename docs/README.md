@@ -1,5 +1,12 @@
 # Introduction
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+<!-- Add KaTeX JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
 Welcome the first Carleton Blockchain technical crashcourse. Over the next 4 weeks, we will be diving deep on the what a blockchain is and how we leverage it to build decentralized applications via smart contracts.
 
 ---
@@ -33,3 +40,4 @@ Calldata temporary
 When you compile a contract to bytecode, that is what the EVM reads
 
 Similar to any other compiled lanaguage, JVM languages, Rust, Go etc.
+
