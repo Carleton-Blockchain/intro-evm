@@ -8,6 +8,7 @@
     go install github.com/JackalLabs/docute@latest && \
     cd docs && \
     docute generate
+    docute host
   """
 
 [build.environment]
